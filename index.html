@@ -1,28 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Sistema de Biblioteca</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Biblioteca Digital</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background:#eef2f7;
+}
+
+.header{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+.card{
+    width:80%;
+    margin:30px auto;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,.2);
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin:8px 0;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+button{
+    background:#22c55e;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:8px;
+}
+
+button:hover{
+    background:#16a34a;
+}
+
+.feature{
+    background:#f8fafc;
+    margin:10px 0;
+    padding:10px;
+    border-left:5px solid #22c55e;
+}
+</style>
 </head>
+
 <body>
-    <h1>Sistema de Biblioteca</h1>
 
-    <h2>Registro de Libros</h2>
+<div class="header">
+    <h1>📚 Biblioteca Digital</h1>
+    <p>MVP - Producto Mínimo Viable</p>
+</div>
 
-    <input type="text" placeholder="Nombre del libro">
-    <br><br>
+<div class="card">
 
-    <input type="text" placeholder="Autor">
-    <br><br>
+    <h2>Registrar Libro</h2>
 
-    <button>Guardar</button>
+    <input type="text" placeholder="Título del libro">
 
-    <h3>Funciones</h3>
+    <input type="text" placeholder="Nombre del autor">
 
-    <ul>
-        <li>Registrar libros</li>
-        <li>Consultar libros</li>
-        <li>Gestionar préstamos</li>
-    </ul>
+    <button>Guardar Libro</button>
+
+    <h2>Funciones Disponibles</h2>
+
+    <div class="feature">✅ Registro de libros</div>
+
+    <div class="feature">✅ Consulta de libros</div>
+
+    <div class="feature">✅ Gestión de préstamos</div>
+
+    <div class="feature">✅ Control de inventario</div>
+
+</div>
 
 </body>
 </html>
