@@ -3,86 +3,87 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Biblioteca Digital</title>
+<title>Sistema de Facturación</title>
 
 <style>
 body{
     font-family: Arial, sans-serif;
+    background:#1e293b;
     margin:0;
-    background:#eef2f7;
+    color:white;
 }
 
-.header{
+header{
     background:#0f172a;
-    color:white;
+    padding:20px;
     text-align:center;
-    padding:30px;
+}
+
+.container{
+    width:80%;
+    margin:30px auto;
 }
 
 .card{
-    width:80%;
-    margin:30px auto;
     background:white;
-    padding:25px;
-    border-radius:15px;
-    box-shadow:0 4px 10px rgba(0,0,0,.2);
+    color:black;
+    padding:20px;
+    border-radius:10px;
 }
 
 input{
     width:100%;
-    padding:12px;
-    margin:8px 0;
-    border:1px solid #ccc;
-    border-radius:8px;
+    padding:10px;
+    margin:10px 0;
 }
 
 button{
-    background:#22c55e;
+    background:#f97316;
     color:white;
     border:none;
     padding:12px 20px;
-    border-radius:8px;
+    cursor:pointer;
+    border-radius:5px;
 }
 
-button:hover{
-    background:#16a34a;
+.features{
+    margin-top:20px;
 }
 
-.feature{
-    background:#f8fafc;
+.features div{
+    background:#334155;
+    padding:15px;
     margin:10px 0;
-    padding:10px;
-    border-left:5px solid #22c55e;
+    border-radius:8px;
 }
 </style>
 </head>
 
 <body>
 
-<div class="header">
-    <h1>📚 Biblioteca Digital</h1>
+<header>
+    <h1>💰 Sistema de Facturación</h1>
     <p>MVP - Producto Mínimo Viable</p>
-</div>
+</header>
+
+<div class="container">
 
 <div class="card">
+    <h2>Crear Factura</h2>
 
-    <h2>Registrar Libro</h2>
+    <input type="text" placeholder="Nombre del cliente">
 
-    <input type="text" placeholder="Título del libro">
+    <input type="number" placeholder="Monto">
 
-    <input type="text" placeholder="Nombre del autor">
+    <button>Generar Factura</button>
+</div>
 
-    <button>Guardar Libro</button>
-
-    <h2>Funciones Disponibles</h2>
-
-    <div class="feature">✅ Registro de libros</div>
-
-    <div class="feature">✅ Consulta de libros</div>
-
-    <div class="feature">✅ Gestión de préstamos</div>
-
-    <div class="feature">✅ Control de inventario</div>
+<div class="features">
+    <div>✅ Registro de clientes</div>
+    <div>✅ Generación de facturas</div>
+    <div>✅ Consulta de ventas</div>
+    <div>✅ Reportes básicos</div>
+</div>
 
 </div>
 
